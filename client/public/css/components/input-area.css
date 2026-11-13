@@ -1,0 +1,80 @@
+/* Input area layout */
+.chat-input-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    direction: ltr; /* enforce physical left/right positions */
+}
+
+.chat-input-center {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.chat-input-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.chat-input-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+}
+
+.chat-input-area .action-btn {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    font-size: 18px;
+}
+
+.chat-input-area .math-tool-btn {
+    padding: 5px 9px;
+    font-size: 14px;
+}
+
+.chat-input-area .text-input-wrapper {
+    padding: 6px 12px;
+}
+
+#imageAttachedIndicator {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: var(--bg-info);
+    border: 1px solid var(--math-border);
+    color: var(--primary-color);
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attachment-clear-btn {
+    background: rgba(220, 38, 38, 0.12);
+    color: var(--delete-bg);
+    border: 1px solid rgba(220, 38, 38, 0.28);
+    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.attachment-clear-btn:hover {
+    background: var(--delete-bg);
+    color: #ffffff;
+}
